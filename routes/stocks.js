@@ -1,6 +1,6 @@
-/*const express = require('express');
+const express = require('express');
 const router = express.Router();
-const stocks = require('../models/Stocks_model');
+const stocks = require('../models/stocks_model');
 
 router.get('/:id?',
  function(request, response) {
@@ -61,4 +61,4 @@ function(request, response) {
   });
 });
 
-module.exports = router;*/
+module.exports = router;

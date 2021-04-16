@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const router = express.Router();
 const Ownership = require('../models/Ownership_model');
 
@@ -62,4 +62,4 @@ function(request, response) {
 });
 
 
-module.exports = router;*/
+module.exports = router;

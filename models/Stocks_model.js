@@ -2,10 +2,10 @@ const db = require('../database');
 
 const stocks = {
   get: function(callback) {
-    return db.query('select * from Stocks', callback);
+    return db.query('select * from stocks', callback);
   },
   getById: function(id, callback) {
-    return db.query('select * from Stocks where id_stocks=?', [id], callback);
+    return db.query('select * from stocks where id_stocks=?', [id], callback);
   },
   add: function(stocks, callback) {
     return db.query(
@@ -15,7 +15,7 @@ const stocks = {
     );
   },
   delete: function(id, callback) {
-    return db.query('delete from Stocks where id_stocks=?', [id], callback);
+    return db.query('delete from stocks where id_stocks=?', [id], callback);
   },
   update: function(id, stocks, callback) {
     return db.query(
